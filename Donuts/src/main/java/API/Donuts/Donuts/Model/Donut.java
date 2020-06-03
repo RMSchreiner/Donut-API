@@ -5,7 +5,7 @@ import java.util.List;
 public class Donut {
 
 	private int count;
-	private List <Results> results;
+	private List<Results> results;
 	
 	public Donut() {
 		

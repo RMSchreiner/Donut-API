@@ -8,7 +8,7 @@ public class Ref {
 	private String ref;
 	private String name;
 	private int calories;
-	//private Extras extras;
+	private List<String>extras;
 	private String photo;
 	private String photo_attribution;
 	
@@ -40,12 +40,6 @@ public class Ref {
 	public void setCalories(int calories) {
 		this.calories = calories;
 	}
-//	public List<Extras> getExtras() {
-//		return extras;
-//	}
-//	public void setExtras(List<Extras> extras) {
-//		this.extras = extras;
-//	}
 	public String getPhoto() {
 		return photo;
 	}
@@ -58,13 +52,19 @@ public class Ref {
 	public void setPhoto_attribution(String photo_attribution) {
 		this.photo_attribution = photo_attribution;
 	}
+	public List<String> getExtras() {
+		return extras;
+	}
+
+	public void setExtras(List<String> extras) {
+		this.extras = extras;
+	}
+
 	@Override
 	public String toString() {
 		return "Ref [id=" + id + ", ref=" + ref + ", name=" + name + ", calories=" + calories + ", extras=" + extras
 				+ ", photo=" + photo + ", photo_attribution=" + photo_attribution + "]";
 	}
 
-
-		
 	}
 

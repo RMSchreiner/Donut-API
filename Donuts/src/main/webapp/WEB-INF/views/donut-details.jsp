@@ -12,9 +12,10 @@
 <h3>Type of Donut</h3>
 <p>${name}</p>
 <h4>Character of Donut</h4>
-<!--   <c:forEach var="extras" items="${extras}"> 
+<c:forEach var="extras" items="${extras}"> 
  <a>${extras}</a> 
-</c:forEach> -->
+ <br>
+</c:forEach> 
 <h4>Number of Calories</h4>
 <p>${calories}</p>
 <img alt="${name}" src="${photo}" width="200">

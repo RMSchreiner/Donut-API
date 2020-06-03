@@ -40,14 +40,14 @@ public class DonutController {
 	public String donutDetails(@RequestParam(value = "id",required = true) int idref,
 		                                                    	Model model) {
 		   Ref ref = refs.getDetails(idref);
-		
+		//need to sort out the refs and extra lists to print out the extras
 		    int calories =  ref.getCalories();
-		   // List<Extras> extras  =  ref.getExtras();
+		             List<String>extra  =  ref.getExtras();
 		            String name  =  ref.getName();
 		            String photo =  ref.getPhoto();
-		               // System.out.print(extras);
+		            System.out.print(extra);
 		            model.addAttribute("calories",calories);
-		          //  model.addAttribute("extras",extras);
+		            model.addAttribute("extras",extra);
 		            model.addAttribute("name",name);
 		            model.addAttribute("photo",photo);
 		
